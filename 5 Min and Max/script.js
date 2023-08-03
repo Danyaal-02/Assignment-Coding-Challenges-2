@@ -1,9 +1,9 @@
-const numbers = [1, 3, 7, 5, 9, 4, 8, 3, 6, 1, 2, 7, 5]
-const map=new Map()
-const access = (arr) => {
-    map.set("max",Math.max(...arr))
-    map.set("min",Math.min(...arr))
-    return map
+function maxMin(arr) {
+  return {
+    max: Math.max(...arr),
+    min: Math.min(...arr),
+  };
 }
 
-console.log(access(numbers))
+const array = [3, 7, 2, 9, 4, 1];
+console.log(maxMin(array))
